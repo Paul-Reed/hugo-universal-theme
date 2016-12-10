@@ -18,7 +18,7 @@
             <h4>Recent posts</h4>
 
             <div class="blog-entries">
-                {{ range first 3 (where .Site.Pages "Type" "post") }}
+                {{ range first 3 (where .Site.Pages "Type" "blog") }}
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
                         <a href="{{ .Permalink }}">
@@ -75,8 +75,9 @@ _________________________________________________________ -->
             {{ end }}
             <p class="pull-right">
               Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
-              Ported by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
-                <!-- Not removing these links is part of the licence conditions of the template. Thanks for understanding :) -->
+              <!-- Not removing this link is part of the licence conditions of the template. Thanks for understanding :) -->
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
             </p>
         </div>
     </div>
